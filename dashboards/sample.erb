@@ -1,0 +1,33 @@
+<script type='text/javascript'> $(function() { Dashing.gridsterLayout('[{"col":2,"row":1,"size_x":2,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":4,"row":2,"size_x":1,"size_y":2},{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":2,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1}]') }); </script>
+
+<% content_for :title do %>My super sweet dashboard<% end %>
+<div class="gridster">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="DevOps Enablement Healthcheck Dashboard"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="synergy" data-view="Meter" data-title="JIRA Completion Rate" data-height="200" data-width="200" data-min="0" data-max="100" data-suffix="%"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Buzzwords" data-moreinfo="# of times said around the office"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="valuation" data-view="Number" data-title="Total Value Generated" data-moreinfo="in £100,000" data-prefix="£"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="convergence" data-view="Graph" data-title="Value Returned from DEE Tools" style="background-color:#ff9618"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="newsarticlesreview" data-view="List" data-unordered="true" data-title="Nationwide PRIDE Awards"></div>
+      <i class="icon-check-sign icon-background"></i>
+    </li>
+
+  </ul>
+</div>
